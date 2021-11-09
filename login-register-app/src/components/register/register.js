@@ -16,6 +16,12 @@ const register = () => {
         <div className="button">
           <button>Register</button>
         </div>
+        <div>
+          <p className="link">
+           Already registered? &ensp;
+            <a href="#">Login</a>
+          </p>
+        </div>
         </div>
     )
 }

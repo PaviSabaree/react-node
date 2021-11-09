@@ -12,6 +12,11 @@ const login = ()=> {
                 <div className="button">
                     <button>Login</button>
                 </div>
+                <p className="link">
+            <a href="#">Forget Password</a><br/>
+              New user? &ensp;
+            <a href="#">Register</a>
+          </p>
             </div>
     )
 }
