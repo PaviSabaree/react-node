@@ -5,14 +5,16 @@ const register = () => {
     return(
         <div className='register'>
         <h1>Register</h1>
-        <label>Username:&ensp;&ensp;&ensp;</label>
+        <label>Username:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label>
         <input type="text" placeholder="Enter your name"></input><br/><br/>
-        <label>Email id:&ensp;&ensp;&ensp;&ensp;&ensp;</label>
+        <label>Email id:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</label>
         <input type="text" placeholder="Enter your email id"></input><br/><br/>
-        <label>Password:&ensp;&ensp;&ensp; </label>
+        <label>Password:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </label>
         <input type="text" placeholder="Enter your password"></input><br/><br/>
-        <label>Ph.no:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </label>
-        <input type="number" placeholder="Enter your phone number"></input><br/><br/>
+        <label>Re-enterPassword:&ensp;&ensp;&ensp; </label>
+        <input type="text" placeholder="Re-enter password"></input><br/><br/>
+        <label>Ph.no:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; </label>
+        <input type="number" placeholder="phone number"></input><br/><br/>
         <div className="button">
           <button>Register</button>
         </div>
