@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import "./register.css"
 import axios from 'axios'
+import { useHistory } from "react-router-dom"
 
 const Register = () => {
+
+  const history = useHistory()
+
 
   const [user,setUser]=useState({
     name:"",
@@ -27,7 +31,7 @@ const register= ()=>{
     axios.post("http://localhost:8000/register", user)
    .then (res=>  {
     alert(res.data.message)
-    // history.push("/login")
+     history.push("/login")
 })
 
   } else {
@@ -39,47 +43,47 @@ const register= ()=>{
     return(
         <div className='register'>
         <h1>Register</h1>
-        
-        <label>Username:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+       <div className='container'> 
+        <label>Username:
         </label>
         <input type="text" 
         name="name"
         value={user.name} 
         placeholder="Enter your name" onChange={handleChange}>
-          </input><br/><br/>
+          </input>
 
-        <label>Email id:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        <label>Email id:
           </label>
         <input type="text" 
         name="email"
         value={user.email}
-        placeholder="Enter your email id" onChange={handleChange}></input><br/><br/>
+        placeholder="Enter your email id" onChange={handleChange}></input>
 
         
-           <label>Ph.no:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; 
+           <label>Ph.no: 
         </label>
            <input type="number"
         name="phoneNumber"
         value={user.phoneNumber}
-        placeholder="phone number" onChange={handleChange}></input><br/><br/>
+        placeholder="Phone number" onChange={handleChange}></input>
 
-        <label>Password:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+        <label>Password
            </label>
-        <input type="text" 
+        <input type="password" 
         name="password"
         value={user.password}
-        placeholder="Enter your password" onChange={handleChange}></input><br/><br/>
+        placeholder="Enter your password" onChange={handleChange}></input>
 
-        <label>Re-enterPassword:&ensp;&ensp;&ensp; 
+        <label>Re-enterPassword:
         </label>
-        <input type="text"
+        <input type="password"
         name="reEnterPassword"
         value={user.reEnterPassword}
-        placeholder="Re-enter password" onChange={handleChange}></input><br/><br/>
+        placeholder="Re-enter password" onChange={handleChange}></input>
       
-       
+       </div>
         <div className="button" onClick={register}>
-          <button>Register</button>
+          Register
         </div>
         <div>
           <p className="link">

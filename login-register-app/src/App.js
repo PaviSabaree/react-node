@@ -4,6 +4,7 @@ import Login from './components/login/login'
 import Register from './components/register/register'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from 'react';
+import Forgetpassword from './components/forgetpassword/forgetpassword';
 
 function App() {
   const [user, setLoginUser] = useState({})
@@ -15,15 +16,20 @@ function App() {
             {
             user && user._id ?   <Homepage setLoginUser={setLoginUser}/>:<Login setLoginUser={setLoginUser}/> 
             }
+       {/* <Homepage/> */}
          </Route>
           <Route path="/login">
             <Login setLoginUser={setLoginUser}/>
+          </Route>
+          <Route path="/forgetpassword">
+          <Forgetpassword/>
           </Route>
           <Route path="/register">
             <Register />
           </Route>
         </Switch>
       </Router>
+    
     </div>
   );
 }
