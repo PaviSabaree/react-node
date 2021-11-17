@@ -70,22 +70,31 @@ app.post("/register",(req,res)=>{
     })
 })
 
-app.put("/forgetpassword", (req, res)=>{
+app.post("/forgetpassword", (req, res)=>{
   User.findOne({email:req.body.email})
   .then (user=>{
      
-     user.password= req.body.password;
-    console.log(password)
-   user.save(err=>{
-        if(err){
-        res.send(err)
-    }else{
-        res.send({message:"Successfully Reset the password"})
-    }
+    
+        res.send({message:"Reset your password"})
     })
-    })
+   
   })
 
+  app.put("/resetpassword", (req, res)=>{
+    User.findOne({email:req.body.email})
+    .then (user=>{
+       
+       user.password= req.body.password;
+      console.log(password)
+     user.save(err=>{
+          if(err){
+          res.send(err)
+      }else{
+          res.send({message:"Successfully Reset the password"})
+      }
+      })
+      })
+    })
 
 app.listen(8000,()=>{
     console.log("BE started at port 8000")

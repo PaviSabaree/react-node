@@ -12,8 +12,7 @@ return (
     <div className = "homepage">
 
         <h1>Hello</h1>
-        <h2>Email id: </h2>
-        <h2>Phone no: </h2>
+        
         <div className="button" onClick = {()=>history.push("/login")}>Logout</div>
     </div>
 )

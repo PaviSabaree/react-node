@@ -29,11 +29,11 @@ const login=()=>{
     alert(res.data.message)
       setLoginUser(res.data.user)
    history.push("/");
-
+console.log(user)
 })
 }
 
-//
+
     return (
         <div className='login'>
             <h1>Login</h1>
