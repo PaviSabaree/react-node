@@ -1,0 +1,29 @@
+.header {
+    background-color: #639c5b;
+    top:0px;
+    color: rgb(200, 211, 47);
+    text-align: center;
+    padding: 1px 500px 2px 150px;
+    /* padding: 0x; */
+    margin: 0;
+    height: 14%;
+    width: 100%;
+     position: fixed; 
+     /* z-index: 1;  */
+    overflow: auto;
+  }
+  
+   
+  
+  .header .flag{
+    float:right;
+    width:30px;
+     height: 25px;
+     padding: 1px 150px 50px 10px;
+   
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

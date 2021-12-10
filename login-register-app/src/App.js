@@ -14,10 +14,10 @@ function App() {
        <Router>
         <Switch>
           <Route exact path="/">
-            {
+            {/* {
             user && user._id ?   <Homepage setLoginUser={setLoginUser}/>:<Login setLoginUser={setLoginUser}/> 
-            }
-       {/* <Homepage/> */}
+            } */}
+       <Homepage/>
          </Route>
           <Route path="/login">
             <Login setLoginUser={setLoginUser}/>
