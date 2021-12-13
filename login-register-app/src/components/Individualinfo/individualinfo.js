@@ -15,16 +15,16 @@ function Individualinfo() {
                 </div>
 <div className='footer-bar'>
     <ul>
-        <li>New</li>
-        <li>Undo</li>
-        <li>Update</li>
-        <li>Save</li>
-        <li>Documents</li>
-        <li>Exit</li>
-        <li>Print</li>
-        <li>Delete</li>
-        <li>Exit</li>
-        <li>search</li>
+        <li><a href='new'>New</a></li>
+        <li><a href='undo'>Undo</a></li>
+        <li><a href='update'>Update</a></li>
+        <li><a href='save'>Save</a></li>
+        <li><a href='documents'>Documents</a></li>
+        <li><a href='exit'>Exit</a></li>
+        <li><a href='print'>Print</a></li>
+        <li><a href='delete'>Delete</a></li>
+        <li><a href='exit'>Exit</a></li>
+        <li><a href='search'>Search</a></li>
        
     </ul>
 </div>
