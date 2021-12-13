@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from 'react';
 import Forgetpassword from './components/forgetpassword/forgetpassword';
 import Resetpassword from './components/resetpassword/resetpassword';
+import Individualinfo from './components/Individualinfo/individualinfo';
 
 function App() {
   const [user, setLoginUser] = useState({})
@@ -31,6 +32,7 @@ function App() {
           <Route path="/register">
             <Register />
           </Route>
+          <Route path="/individualinfo"><Individualinfo/></Route>
         </Switch>
       </Router>
     
