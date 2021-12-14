@@ -7,6 +7,8 @@ import { useState } from 'react';
 import Forgetpassword from './components/forgetpassword/forgetpassword';
 import Resetpassword from './components/resetpassword/resetpassword';
 import Individualinfo from './components/Individualinfo/individualinfo';
+import Search from './components/Search/search';
+import Userprofile from './components/Userprofile/userprofile';
 
 function App() {
   const [user, setLoginUser] = useState({})
@@ -33,6 +35,12 @@ function App() {
             <Register />
           </Route>
           <Route path="/individualinfo"><Individualinfo/></Route>
+          <Route path="/search">
+            <Search />
+            </Route>
+            <Route path="/new">
+            <Userprofile />
+          </Route>
         </Switch>
       </Router>
     

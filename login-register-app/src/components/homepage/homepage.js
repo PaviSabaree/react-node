@@ -8,6 +8,12 @@ const Homepage = ({ setLoginUser}) => {
 
    
     const history = useHistory()
+
+   
+        var dt=new Date();
+        var showdate=dt.getDate()+"/"+dt.getMonth()+"/"+dt.getFullYear();
+        var showtime=dt.toLocaleTimeString();
+    
   
 return (
     <div className = "homepage">
@@ -24,8 +30,8 @@ return (
             <div className='date-time'>
             <h4>Date and Time</h4>
             <div className="box-info">
-            <h4>Date:{}</h4>
-            <h4>Time:{}</h4>
+            <h4>Date:{showdate}</h4>
+            <h4>Time:{showtime}</h4>
             </div>
             </div>
             </div>
