@@ -39,6 +39,15 @@ function App() {
             <Search />
             </Route>
             <Route path="/new">
+            <Individualinfo name='New -' />
+          </Route>
+          <Route path="/update">
+            <Individualinfo name='Update -' />
+          </Route>
+          <Route path="/delete">
+            <Individualinfo name='Delete -' />
+          </Route>
+          <Route path="/userprofile">
             <Userprofile />
           </Route>
         </Switch>

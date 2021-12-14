@@ -4,7 +4,7 @@ import Navbar from "../Nav-bar/Nav-bar"
 import Userprofile from '../Userprofile/userprofile';
 import "./individualinfo.css"
 
-function Individualinfo() {
+function Individualinfo(props) {
     
     return (
         <div className='ind-info'>
@@ -12,20 +12,19 @@ function Individualinfo() {
             <Navbar/>
             <div className='container-info'>
                 <div className='top-bar'>
-                <h7>{} Individual Client Information</h7>
+                <h7>{props.name} Individual Client Information</h7>
                 </div>
                 <Userprofile/>
 <div className='footer-bar'>
     <ul>
         <li><a href='new'>New</a></li>
-        <li><a href='undo'>Undo</a></li>
+        <li><a href='#undo'>Undo</a></li>
         <li><a href='update'>Update</a></li>
         <li><a href='save'>Save</a></li>
-        <li><a href='documents'>Documents</a></li>
-        <li><a href='exit'>Exit</a></li>
-        <li><a href='print'>Print</a></li>
+        <li><a href='#documents'>Documents</a></li>
+        <li><a href='#print'>Print</a></li>
         <li><a href='delete'>Delete</a></li>
-        <li><a href='exit'>Exit</a></li>
+        <li><a href='/'>Exit</a></li>
         <li><a href='search'>Search</a></li>
        
     </ul>
