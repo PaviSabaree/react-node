@@ -11,21 +11,6 @@
     width: 750px;
     height: 350px; 
 }
-label {
-    border: 1px solid black;
-    margin:2px;
-    padding:5px;
-    font-size:0.75rem;
-}
-input {
-   
-    border: 1px solid black;
-    margin:2px;
-    padding:5px;
-    width:50%;
-    font-size:0.75rem;
-}
-textarea {
-    width: 500px;
-    height:120px;
-}
+
+
+
