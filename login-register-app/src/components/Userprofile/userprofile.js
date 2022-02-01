@@ -1,11 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../Header/Header';
 import Individualinfo from '../Individualinfo/individualinfo';
 import Navbar from '../Nav-bar/Nav-bar';
+import axios from "axios"
+// import { useHistory } from "react-router-dom"
 import './userprofile.css';
 
 function Userprofile() {
-   
+    const [userProfile,setUserProfile]=useState({
+        name:"",
+        email:"",
+        notes:""
+        
+      })
+    
+    const handleChange=(e)=>{
+        const {name, value}= e.target
+        setUserProfile({
+          ...userProfile,
+          [name]:value
+        })
+       }
+       const saveUserProfile= ()=>{
+        const {name, email,notes} = userProfile
+        if(userProfile && email){
+          axios.post("http://localhost:8000/userProfile", userProfile)
+         .then (res=>  {
+          alert(res.data.message)
+        //    history.push("/individualinfo")
+      })
+      } else {
+          alert ("invalid input")
+        }
+        
+      }
     return (
         <div className='userprofile'>
            
@@ -20,7 +48,7 @@ function Userprofile() {
                  <option >Mrs</option>
                  <option>Ms</option>
                  </select></td><td>
-                <input type ='text' name='name'/>
+                <input type ='text' name='name' value={userProfile.name} onChange={handleChange}/>
                      </td>
                     </tr>
                     <tr>
@@ -55,7 +83,7 @@ function Userprofile() {
                         <td><label>Emirate</label></td>  <td><select><option>c1</option><option>c2</option></select></td>
                         </tr>
                         <tr>
-                        <td><label>Email Address:</label></td>  <td><input type ='text' name='email' /></td>
+                        <td><label>Email Address:</label></td>  <td><input type ='text' name='email' value={userProfile.email} onChange={handleChange}/></td>
                         </tr>
                         <tr>
                         <td><label>Notes:</label></td> 
@@ -63,17 +91,9 @@ function Userprofile() {
                         </tr>    
                         
                     </table>
-            
-            {/* 
-           
-            
-            */}
-          
-            
-            
+                    <li><a href='/save' onClick={saveUserProfile}>Save</a></li>
+             </div>
             </div>
-           
-        </div>
     )
 }
 

@@ -6,6 +6,8 @@ import "./individualinfo.css"
 
 function Individualinfo(props) {
     
+   
+
     return (
         <div className='ind-info'>
             <Header/>
@@ -20,7 +22,7 @@ function Individualinfo(props) {
         <li><a href='new'>New</a></li>
         <li><a href='#undo'>Undo</a></li>
         <li><a href='update'>Update</a></li>
-        <li><a href='#save'>Save</a></li>
+        <li><a href='/save'>Save</a></li>
         <li><a href='#documents'>Documents</a></li>
         <li><a href='#print'>Print</a></li>
         <li><a href='delete'>Delete</a></li>
