@@ -9,7 +9,7 @@
     background: #f9f9f9;
     padding-left: 240px;
     padding-right: 0;
-    padding-top:75px;
+    padding-top:50px;
     padding-bottom: 5px;
 }
 
@@ -17,28 +17,28 @@
     background-color: #6e6d6d;
     padding: 0x;
     margin: 0;
-    height: 45px;
+    height: 35px;
     width: 100%;
-     top:92px; 
-     z-index: 1; 
+      z-index: 1; 
    
     overflow: auto; 
   }
+  
   .container-info h7{
       position: absolute;
       left:600px;
-      padding-top: 6px;
+      padding-top: 2px;
       margin-top: 6px;
     color: rgb(248, 244, 244);
   }
   .footer-bar {
     background-color: #6e6d6d;
-    top:520px;
+    top:545px;
     color: rgb(200, 211, 47);
     /* padding: 1px 5px 2px 550px; */
     padding: 0x;
     margin: 0;
-    height: 10%;
+    height: 6%;
     width: 100%;
      position: fixed; 
      /* z-index: 1;  */
@@ -49,6 +49,7 @@
     list-style-type: none;
     display:inline-flex;
     color: #fff;
+    margin: 3px;
   }
   .footer-bar ul li{
       width:90px;

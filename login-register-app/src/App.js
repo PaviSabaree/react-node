@@ -10,6 +10,7 @@ import Individualinfo from './components/Individualinfo/individualinfo';
 import Search from './components/Search/search';
 import Userprofile from './components/Userprofile/userprofile';
 
+
 function App() {
   const [user, setLoginUser] = useState({})
   return (

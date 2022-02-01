@@ -4,6 +4,15 @@
     background: white;
     position: relative
 }
+
+ td {
+    border: 1px solid black;
+    width: 100%;
+}
+
+select {
+    margin-right: -40px;
+}
 .userprofile-container {
     padding-left: 75px;
     padding-top: 5px;
@@ -12,5 +21,9 @@
     height: 350px; 
 }
 
-
+textarea {
+    border-width: 1px;
+    width: 350%;
+    height: 75px;
+}
 

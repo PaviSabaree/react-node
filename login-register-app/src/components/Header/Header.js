@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css';
-// import Flags from "country-flag-icons/react/3x2"
+
 
 function Header() {
     return (
@@ -8,8 +8,8 @@ function Header() {
             <div className='clearfix'>
            
                 <img className="flag" src='flag-uae.png'></img>
-            {/* <Flags.AE  className="flag"/> */}
-            <h2> Business Management System</h2>
+        
+            <h2 className='head'> Business Management System</h2>
             </div>
                 
               

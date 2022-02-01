@@ -3,23 +3,28 @@
     top:0px;
     color: rgb(200, 211, 47);
     text-align: center;
-    padding: 1px 500px 2px 150px;
+    /* padding: 1px 100px 2px 150px; */
     /* padding: 0x; */
     margin: 0;
-    height: 75px;
+    height: 50px;
     width: 100%;
      position: fixed; 
      /* z-index: 1;  */
     overflow: auto;
   }
-  
+  .head {
+    margin: 10px;
+    margin-left: 110px;
+  }
    
   
   .header .flag{
-    float:right;
-    width:30px;
-     height: 25px;
-     padding: 1px 150px 50px 10px;
+    float: right;
+    width: 30px;
+    height: 25px;
+    margin: 1px;
+    margin-right: 23px;
+     /* padding: 1px 150px 50px 1px; */
    
 }
 .clearfix::after {
